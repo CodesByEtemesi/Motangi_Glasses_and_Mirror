@@ -1,52 +1,49 @@
-import React from 'react';
+import React from 'react'
+import Title from '../components/Title'
+import NewsletterBox from '../components/NewsletterBox'
+import {assets} from '../assets/assets'
 
 const About = () => {
   return (
-    <div className="p-8 max-w-4xl mx-auto bg-gray-100 rounded-lg shadow-xl">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-extrabold text-gray-900 mb-6">
-          About us
-        </h1>
-        <p className="text-gray-800 leading-relaxed mb-6">
-          Where clarity meets creativity. At Motangi Glasses and Mirrors, we are more than just a glass and mirror supplier—we are artisans dedicated to transforming spaces with elegance and precision.
-        </p>
-        <blockquote className="italic text-gray-700 border-l-4 border-gray-900 pl-6 bg-gray-100 py-3 hover:bg-gray-200 transition-colors duration-300">
-          "Transform your space into a masterpiece with our bespoke glass and mirror solutions."
-        </blockquote>
+    <div>
+      <div className='text-2xl text-center pt-8 border-t'>
+        <Title text1={'ABOUT'} text2={'US'} />
       </div>
-
-    
-      <div className="space-y-8">
-        
-        <div className="bg-white p-4 rounded-lg shadow-md">
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">Our Vision</h2>
-          <p className="text-gray-700 leading-relaxed">
-            To be the leading provider of premium glass and mirror solutions, known for our commitment to innovation, craftsmanship, and exceptional customer service. We envision a world where every space reflects beauty and clarity through our products.
-          </p>
-        </div>
-
-        
-        <div className="bg-white p-4 rounded-lg shadow-md">
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">Our Values</h2>
-          <ul className="list-disc list-inside text-gray-700">
-            <li className="mb-2">Integrity: Upholding the highest standards of honesty and transparency in everything we do.</li>
-            <li className="mb-2">Craftsmanship: Committing to the art of fine craftsmanship and attention to detail.</li>
-            <li className="mb-2">Customer-Centricity: Putting the needs of our customers at the heart of our business.</li>
-            <li className="mb-2">Innovation: Embracing creativity and innovation to provide cutting-edge solutions.</li>
-            <li className="mb-2">Sustainability: Striving for environmentally responsible practices in our operations.</li>
-          </ul>
-        </div>
-
-        
-        <div className="bg-white p-4 rounded-lg shadow-md">
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">Our Mission</h2>
-          <p className="text-gray-700 leading-relaxed">
-            Our mission is to deliver superior quality glass and mirror products that enhance the aesthetic and functional aspects of any space. We aim to exceed customer expectations through exceptional service, innovative solutions, and a deep understanding of our clients' needs.
-          </p>
+      <div className='my-10 flex flex-col md:flex-row gap-16'>
+        <img className='w-full md:max-w-[450px]' src={assets.about_img} alt="About Us" />
+        <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
+          <p className='text-lg'>Welcome to our online store! We are passionate about providing high-quality products and exceptional customer service. Our mission is to make your shopping experience enjoyable and convenient.</p>
+          <p className='text-lg'>We carefully curate our selection to ensure that you have access to the latest trends and timeless classics. Whether you're looking for fashion, electronics, or home essentials, we have something for everyone.</p>
+          <p className='text-lg'>Thank you for choosing us as your go-to destination for all your shopping needs. We look forward to serving you and exceeding your expectations!</p> 
+          <b className='text-gray-800'>Our Mission</b>
+          <p className='text-lg'>To provide our customers with a seamless online shopping experience, offering a wide range of high-quality products at competitive prices. We strive to exceed customer expectations through exceptional service and a commitment to excellence.</p>
         </div>
       </div>
+      <div className='text-xl py-4'>
+        <Title text1={'WHY'} text2={'CHOOSE US'} />
+      </div>
+
+      <div className='flex flex-col md:flex-row text-sm mb-20'>
+        <div className='border px-10 md:px16 py-8 sm:py-20 flex flex-col gap-5 '>
+          <b>Quality Assurance</b>
+          <p className='text-gray-600'>We take pride in the quality of our products and the service we provide. Every item in our inventory is carefully selected to meet our high standards.</p>
+        </div>
+        <div className='border px-10 md:px16 py-8 sm:py-20 flex flex-col gap-5 '>
+          <b>Fast Shipping</b>
+          <p className='text-gray-600'>We offer fast and reliable shipping options to get your products to you quickly and safely.</p>
+        </div>
+        <div className='border px-10 md:px16 py-8 sm:py-20 flex flex-col gap-5 '>
+          <b>Convenience</b>
+          <p className='text-gray-600'>Shopping with us is easy and convenient. Our user-friendly website and efficient customer service make your shopping experience seamless.</p>
+        </div>
+        <div className='border px-10 md:px16 py-8 sm:py-20 flex flex-col gap-5 '>
+          <b>Exceptional Customer Service</b>
+          <p className='text-gray-600'>We are committed to providing exceptional customer service. Our team is always ready to assist you with any questions or concerns you may have.</p>
+        </div>
+      </div>
+      <NewsletterBox />
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

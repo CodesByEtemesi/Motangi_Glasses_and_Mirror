@@ -1,56 +1,30 @@
-import React from 'react';
+import React from 'react'
+import Title from '../components/Title'
+import { assets } from '../assets/assets'
+import NewsLetterBox from '../components/NewsletterBox'
 
 const Contact = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert('Message sent!');
-  };
-
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-gray-100 min-h-screen flex items-center justify-center">
-      <div className="w-full bg-white shadow-lg rounded-lg p-8">
-        <h1 className="text-3xl font-semibold text-black mb-6">Contact Us</h1>
-        <form id="contactForm" onSubmit={handleSubmit} className="space-y-4">
-          <div className="form-group">
-            <label htmlFor="name" className="block text-lg font-medium text-black">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email" className="block text-lg font-medium text-black">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message" className="block text-lg font-medium text-black">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800"
-          >
-            Send Message
-          </button>
-        </form>
+    <div>
+      <div className='text-center text-2xl pt-10 border-t'>
+        <Title text1={'CONTACT'} text2={'US'} />
       </div>
+      <div className='flex flex-col justify-center md:flex-row gap-10 my-10 mb-28'>
+        <img className='w-full md:max-w-[480px]' src={assets.contact_img} alt="Contact Us" />
+        <div className='flex flex-col justify-center items-start gap-6'>
+          <p className='font-semibold text-xl text-gray-600'>Our Store</p>
+          <p className='text-gray-500'>254 Moi Avenue <br /> Sawa Mall, Nairobi, Kenya</p>
+          <p className='text-gray-500 '>Tel: (254) 700 000 000 <br /> Email: info@ourstore.com</p>
+          <p className='font-semibold text-xl text-gray-600 '>Careers at Our Store</p>
+          <p className='text-gray-500'>Learn more about our teams and job opportunities.</p>
+          <button className='border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500'>Explore Jobs</button>
+        </div>
+      </div>
+      <NewsLetterBox />
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
+
+
