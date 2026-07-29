@@ -107,7 +107,9 @@ import p_img_050 from './p_img_050.jpg'
 import p_img_051 from './p_img_051.jpg'
 
 import logo from './logo.png'
-import llogo from './llogo.png'
+import logo1 from './logo1.png'
+import logowhite_rbg from './logowhite_rbg.png'
+import llogo from './logo.png'
 import hero_img from './hero_img.png'
 import cart_icon from './cart_icon.png'
 import bin_icon from './bin_icon.png'
@@ -132,6 +134,8 @@ import cross_icon from './cross_icon.png'
 export const assets = {
     p_img_013,
     logo,
+    logo1,
+    logowhite_rbg,
     llogo,
     hero_img,
     cart_icon,

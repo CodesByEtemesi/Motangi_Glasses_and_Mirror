@@ -1,8 +1,18 @@
 {
-  "name": "frontend",
+  "name": "motangi-glasses-and-mirrors-frontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Frontend for Motangi Glasses and Mirrors — an e-commerce storefront for glass, mirror, and wall-art products.",
+  "author": "Samwel (CodesByEtemesi)",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodesByEtemesi/Motangi_Glasses_and_Mirror.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
