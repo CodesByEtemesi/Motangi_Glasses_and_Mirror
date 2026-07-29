@@ -58,6 +58,17 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 pt-6 text-center">
           <p className="text-gray-500 text-sm">&copy; {currentYear} Motangi Glasses and Mirrors. All rights reserved.</p>
+          <p className="text-gray-600 text-xs mt-2">
+  Built by{' '}
+            <a
+              href="https://codesbyetemesi.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition"
+            >
+              CodesByEtemesi
+            </a>
+          </p>
         </div>
       </div>
     </footer>
