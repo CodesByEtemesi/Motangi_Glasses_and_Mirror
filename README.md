@@ -1,81 +1,98 @@
-# Motangi_Glasses_and_Mirrors
-A website application that offers a wide selection of glasses and mirrors ranging from wall mirrors to washroom mirrors and glasses.
+# Motangi Glasses and Mirrors
 
-# Authors
-<ol>
-<li>Samwel Etemesi</li>
-<li>Linda Chebet</li>
-</ol>
+An e-commerce web application for browsing and purchasing mirrors, glass wall art, and cladding products — including wall mirrors, bathroom mirrors, LED-backlit mirrors, and decorative wallpaper/tile finishes.
 
-# Table of Contents
-Introduction Features 
-Getting Started 
-Prerequisites 
-Installation 
-Folder Structure 
-Dependencies 
-Contributing License
+## Author
 
-# Introduction
-Welcome to Motangi Glasses and Mirrors, your ultimate destination for premium glasses and mirrors. Whether you're searching for stunning wall mirrors to enhance your gym/dance studio, elegant bathroom mirrors, unique washroom mirrors, or stylish wallpapers to elevate your interior décor, we've got it all. Our carefully curated collection offers a wide range of options to suit any space and style. With an easy-to-navigate website and top-notch customer service, finding the perfect mirror or glass piece for your home or business has never been easier. Sit back, browse, and let us help you reflect your style in every room!
-# Features
-1. Glasses and Mirrors Display
-View a collection of glasses and mirrors with detailed information, including images, names, descriptions, and prices.
+Samwel Etemesi ([@CodesByEtemesi](https://github.com/CodesByEtemesi))
 
-2. Basket
-Add books to the cart. 
-Remove products from the cart.
+## Table of Contents
 
-3. Forms
-The website has an add book form whose access is restricted to admins using a strong password protection.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Project Status](#project-status)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [Contact](#contact)
+- [License](#license)
 
-4. Dashboard
-The Dashboard has a delete function which is also restricted to the admins only.
+## Introduction
 
-5. The Footer has a variety of contact details for the users to easily give their client feedback and also easily access the team when purchasing a book.
+Motangi Glasses and Mirrors is an online storefront for browsing a curated collection of glass and mirror products — from bathroom and bedroom mirrors to full-length, LED-backlit, and custom decorative pieces. The site is designed to give customers an easy way to explore the catalog by category and type, view product details, and manage a shopping cart ahead of checkout.
 
+## Features
 
-# Getting Started
-Prerequisites Node.js (or any server setup of your choice) for serving product data. 
-<b>Installation </b>
-<ol>
-    <li>Clone the repository. </li>   
-    <li>Copy code. </li>   
-    <li>Git clone the copied code to your terminal. </li>   
-    <li>cd Motangi_Glasses_and_Mirrors. </li>   
-    <li>cd frontend. </li> 
-    <li>npm install => to install all the dependencies </li>
-    <li>npm run dev => to start the app on the local server on the browser. </li> 
-</ol>
+- **Product Catalog** — browse mirrors and glass products with images, names, descriptions, and pricing.
+- **Filtering & Sorting** — filter products by category (Bedroom, Bathroom, Luxurious, Cladding) and type (Rectangular, Full Length, LED Backlit, Beveled, and more), and sort by price.
+- **Search** — search the catalog by product name.
+- **Shopping Cart** — add products to a cart, adjust quantities, and view running totals.
+- **Product Detail Pages** — dynamic per-product pages with images, descriptions, and related product suggestions.
+- **Responsive Design** — built with Tailwind CSS for a consistent experience across mobile and desktop.
 
-# How to go about the application
-Once on the landing page of the website,a user can easily search for a book according to the title.
-Browse on the list of books and click "Add to Cart" to add books to your Basket. 
-Adjust books in the cart as needed. 
-Use PayPal to checkout.
+## Tech Stack
 
-# Folder Structure
-css: Contains stylesheets for the website. 
-jsx: Houses react components for functionality. pictures: Stores images of the books collection. 
-index.html: The main HTML file for the website. 
-Dependencies JavaScript with Fetch API for data retrieval. 
-A server (e.g., Node.js) to handle product data requests. 
-# Contributing 
-Feel free to contribute by opening issues, providing feedback, or submitting pull requests. 
-Contributions are welcome and encouraged!
+- **Frontend:** React (Vite), React Router, Tailwind CSS, React Toastify, React Icons
+- **Backend:** Node.js, Express *(in active development)*
+- **Database:** MongoDB *(planned)*
 
-# Contact Details
-Reach us via email : samweletemesi2@gmail.com
+## Getting Started
 
-# License
-This project is licensed under the Apache License.
+### Prerequisites
 
-# About
-A Web-app that sells glasses and mirrors.
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- npm
 
-# Resources
-<ul> 
-    <li>Youtube tutorials. </li>
-    <li>Canvas Learning Materials.</li>
-</ul>
+### Installation
 
+```bash
+# Clone the repository
+git clone https://github.com/CodesByEtemesi/Motangi_Glasses_and_Mirror.git
+
+# Navigate into the project
+cd Motangi_Glasses_and_Mirror/frontend
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+The app will be available at `http://localhost:5173` by default.
+
+## Project Status
+
+This project is under active development.
+
+- ✅ Frontend UI, routing, filtering, sorting, search, and cart logic are functional using hardcoded product data.
+- 🚧 Backend (Express + MongoDB) is scaffolded but routes, models, and controllers are still being built.
+- 🚧 Live product data, authentication, and order processing are planned next steps.
+
+## Folder Structure
+```bash
+frontend/
+├── public/ # Static assets served as-is (favicon, etc.)
+├── src/
+│ ├── assets/ # Product images and image asset exports
+│ ├── components/ # Reusable UI components (Navbar, Footer, ProductItem, etc.)
+│ ├── context/ # React Context for global shop state (cart, search, products)
+│ ├── pages/ # Route-level pages (Home, Collection, Product, Cart, etc.)
+│ ├── App.jsx
+│ └── main.jsx
+└── package.json
+```
+## Contributing
+
+This is currently a solo project, but feedback, issues, and suggestions are welcome. Feel free to open an issue if you spot a bug or have an idea for improvement.
+
+## Contact
+
+Samwel Etemesi — samweletemesi2@gmail.com
+
+## License
+
+This project is currently unlicensed/proprietary. All rights reserved.
