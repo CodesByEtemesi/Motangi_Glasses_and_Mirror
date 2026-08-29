@@ -10,13 +10,13 @@ const About = () => {
         <Title text1={'ABOUT'} text2={'US'} />
       </div>
       <div className='my-10 flex flex-col md:flex-row gap-16'>
-        <img className='w-full md:max-w-[450px]' src={assets.about_img} alt="About Us" />
+        <img className='w-full md:max-w-[450px]' src={assets.about_img} alt="About Motangi Glasses and Mirrors" />
         <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
-          <p className='text-lg'>Welcome to our online store! We are passionate about providing high-quality products and exceptional customer service. Our mission is to make your shopping experience enjoyable and convenient.</p>
-          <p className='text-lg'>We carefully curate our selection to ensure that you have access to the latest trends and timeless classics. Whether you're looking for fashion, electronics, or home essentials, we have something for everyone.</p>
-          <p className='text-lg'>Thank you for choosing us as your go-to destination for all your shopping needs. We look forward to serving you and exceeding your expectations!</p> 
+          <p className='text-lg'>Welcome to Motangi Glasses and Mirrors, your trusted source for premium mirrors and glass products in Kenya. We specialize in bringing quality, elegance, and durability into every home and space we serve.</p>
+          <p className='text-lg'>From bathroom and bedroom mirrors to full-length, LED-backlit, and custom decorative pieces, our carefully curated collection combines modern design with lasting craftsmanship. Whether you're renovating a single room or outfitting an entire space, we have options to match your style.</p>
+          <p className='text-lg'>Thank you for choosing us as your destination for glass and mirror solutions. We look forward to helping you reflect your style in every space.</p>
           <b className='text-gray-800'>Our Mission</b>
-          <p className='text-lg'>To provide our customers with a seamless online shopping experience, offering a wide range of high-quality products at competitive prices. We strive to exceed customer expectations through exceptional service and a commitment to excellence.</p>
+          <p className='text-lg'>To provide our customers with quality mirrors and glass products at competitive prices, backed by dependable service. We strive to make every purchase — from browsing to delivery — a seamless experience.</p>
         </div>
       </div>
       <div className='text-xl py-4'>
@@ -24,26 +24,76 @@ const About = () => {
       </div>
 
       <div className='flex flex-col md:flex-row text-sm mb-20'>
-        <div className='border px-10 md:px16 py-8 sm:py-20 flex flex-col gap-5 '>
+        <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5 '>
           <b>Quality Assurance</b>
-          <p className='text-gray-600'>We take pride in the quality of our products and the service we provide. Every item in our inventory is carefully selected to meet our high standards.</p>
+          <p className='text-gray-600'>Every mirror and glass piece in our inventory is carefully selected and inspected to meet our high standards for finish and durability.</p>
         </div>
-        <div className='border px-10 md:px16 py-8 sm:py-20 flex flex-col gap-5 '>
-          <b>Fast Shipping</b>
-          <p className='text-gray-600'>We offer fast and reliable shipping options to get your products to you quickly and safely.</p>
+        <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5 '>
+          <b>Fast Delivery</b>
+          <p className='text-gray-600'>We offer fast, careful delivery to get your mirrors and glass products to you safely, without damage in transit.</p>
         </div>
-        <div className='border px-10 md:px16 py-8 sm:py-20 flex flex-col gap-5 '>
+        <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5 '>
           <b>Convenience</b>
-          <p className='text-gray-600'>Shopping with us is easy and convenient. Our user-friendly website and efficient customer service make your shopping experience seamless.</p>
+          <p className='text-gray-600'>Shopping with us is easy and convenient. Browse our full catalog online and find the right piece for your space without the hassle.</p>
         </div>
-        <div className='border px-10 md:px16 py-8 sm:py-20 flex flex-col gap-5 '>
+        <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5 '>
           <b>Exceptional Customer Service</b>
-          <p className='text-gray-600'>We are committed to providing exceptional customer service. Our team is always ready to assist you with any questions or concerns you may have.</p>
+          <p className='text-gray-600'>We're committed to helping you find the right product. Our team is ready to assist with any questions on sizing, style, or installation.</p>
         </div>
       </div>
-      <NewsletterBox />
+      <NewsLetterBox />
     </div>
   )
 }
 
 export default About
+
+// import React from 'react'
+// import Title from '../components/Title'
+// import NewsLetterBox from '../components/NewsLetterBox'
+// import {assets} from '../assets/assets'
+
+// const About = () => {
+//   return (
+//     <div>
+//       <div className='text-2xl text-center pt-8 border-t'>
+//         <Title text1={'ABOUT'} text2={'US'} />
+//       </div>
+//       <div className='my-10 flex flex-col md:flex-row gap-16'>
+//         <img className='w-full md:max-w-[450px]' src={assets.about_img} alt="About Us" />
+//         <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
+//           <p className='text-lg'>Welcome to our online store! We are passionate about providing high-quality products and exceptional customer service. Our mission is to make your shopping experience enjoyable and convenient.</p>
+//           <p className='text-lg'>We carefully curate our selection to ensure that you have access to the latest trends and timeless classics. Whether you're looking for fashion, electronics, or home essentials, we have something for everyone.</p>
+//           <p className='text-lg'>Thank you for choosing us as your go-to destination for all your shopping needs. We look forward to serving you and exceeding your expectations!</p> 
+//           <b className='text-gray-800'>Our Mission</b>
+//           <p className='text-lg'>To provide our customers with a seamless online shopping experience, offering a wide range of high-quality products at competitive prices. We strive to exceed customer expectations through exceptional service and a commitment to excellence.</p>
+//         </div>
+//       </div>
+//       <div className='text-xl py-4'>
+//         <Title text1={'WHY'} text2={'CHOOSE US'} />
+//       </div>
+
+//       <div className='flex flex-col md:flex-row text-sm mb-20'>
+//         <div className='border px-10 md:px16 py-8 sm:py-20 flex flex-col gap-5 '>
+//           <b>Quality Assurance</b>
+//           <p className='text-gray-600'>We take pride in the quality of our products and the service we provide. Every item in our inventory is carefully selected to meet our high standards.</p>
+//         </div>
+//         <div className='border px-10 md:px16 py-8 sm:py-20 flex flex-col gap-5 '>
+//           <b>Fast Shipping</b>
+//           <p className='text-gray-600'>We offer fast and reliable shipping options to get your products to you quickly and safely.</p>
+//         </div>
+//         <div className='border px-10 md:px16 py-8 sm:py-20 flex flex-col gap-5 '>
+//           <b>Convenience</b>
+//           <p className='text-gray-600'>Shopping with us is easy and convenient. Our user-friendly website and efficient customer service make your shopping experience seamless.</p>
+//         </div>
+//         <div className='border px-10 md:px16 py-8 sm:py-20 flex flex-col gap-5 '>
+//           <b>Exceptional Customer Service</b>
+//           <p className='text-gray-600'>We are committed to providing exceptional customer service. Our team is always ready to assist you with any questions or concerns you may have.</p>
+//         </div>
+//       </div>
+//       <NewsLetterBox />
+//     </div>
+//   )
+// }
+
+// export default About

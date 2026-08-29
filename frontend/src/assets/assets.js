@@ -258,9 +258,9 @@ export const products = [
         bestseller: true
     },
     {
-        _id: "aaaah",
+        _id: "aaaba",
         name: "Charcoal Grey (Subway)-AG401S-(CG 4'X12')",
-        description: "Offers a contemporary look with its deep charcoal grey hue and sleek subway tile design. Ideal for stylish wall or floor applications, this tile adds a modern touch to any space, enhancing your interior with elegance and versatility.Introducing our Bathroom Beveled Mirror, a perfect blend of elegance and functionality. Crafted with precision, its sleek beveled edges add a touch of sophistication to any bathroom decor. The high-quality, crystal-clear reflection brightens your space, while the durable design ensures long-lasting performance. ",
+        description: "Offers a contemporary look with its deep charcoal grey hue and sleek subway tile design. Ideal for stylish wall or floor applications, this tile adds a modern touch to any space, enhancing your interior with elegance and versatility.",
         price: 4200,
         image: [p_img_009],
         category: "Cladding",
@@ -487,6 +487,7 @@ export const products = [
         date: 1716634345448,
         bestseller: true
     },
+]
     // {
     //     _id: "aaaab",
     //     name: "Men Round Neck Pure Cotton T-shirt",
@@ -1104,4 +1105,4 @@ export const products = [
     //     bestseller: false
     // }
 
-]
+// ]
